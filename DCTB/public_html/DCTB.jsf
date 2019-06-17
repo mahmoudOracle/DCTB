@@ -21,7 +21,7 @@
         <afc:component>
             <afc:description/>
             <afc:display-name>
-                DCTB
+                DeclarativeTB
             </afc:display-name>
             <afc:attribute>
                 <afc:attribute-name>
@@ -110,10 +110,10 @@
             </afc:attribute>
             <afc:component-extension>
                 <afc:component-tag-namespace>
-                    DCTB
+                    DeclarativeTB
                 </afc:component-tag-namespace>
                 <afc:component-taglib-uri>
-                    /DCTB
+                    /DeclarativeTB
                 </afc:component-taglib-uri>
             </afc:component-extension>
         </afc:component>
