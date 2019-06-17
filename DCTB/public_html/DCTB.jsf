@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="comp" definition="private"
+                 xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:toolbar id="dc_t1">
+        <af:group id="dc_g3">
+            <af:button text="Add" id="dc_b1" icon="/images/add.png"/>
+            <af:button text="Delete" id="dc_b2" icon="/images/remove.png"/>
+        </af:group>
+        <af:group id="dc_g1">
+            <af:button text="First" id="dc_b3" icon="/images/First.png"/>
+            <af:button text="Previous" id="dc_b4" icon="/images/back.png"/>
+            <af:button text="Next" id="dc_b5" icon="/images/next.png"/>
+            <af:button text="Last" id="dc_b6" icon="/images/Last.png"/>
+        </af:group>
+        <af:group id="dc_g2">
+            <af:button text="Save" id="dc_b7" icon="/images/accept.png"/>
+            <af:button text="Undo" id="dc_b8" icon="/images/repeat.png"/>
+        </af:group>
+    </af:toolbar>
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>
+                DCTB
+            </afc:display-name>
+            <afc:component-extension>
+                <afc:component-tag-namespace>
+                    DCTB
+                </afc:component-tag-namespace>
+                <afc:component-taglib-uri>
+                    /DCTB
+                </afc:component-taglib-uri>
+            </afc:component-extension>
+        </afc:component>
+    </af:xmlContent>
+</af:componentDef>
