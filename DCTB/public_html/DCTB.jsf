@@ -3,7 +3,7 @@
                  xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
     <af:toolbar id="dc_t1">
         <af:group id="dc_g3">
-            <af:button text="Add" id="dc_b1" icon="/images/add.png"/>
+            <af:button text="Add" id="dc_b1" icon="/images/add.png" actionListener="#{dml.Create}"/>
             <af:button text="Delete" id="dc_b2" icon="/images/remove.png"/>
         </af:group>
         <af:group id="dc_g1">
@@ -23,6 +23,91 @@
             <afc:display-name>
                 DCTB
             </afc:display-name>
+            <afc:attribute>
+                <afc:attribute-name>
+                    NavigationVisable
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    IteratorName
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.String
+                </afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    InsertType
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    DMLInsertVisable
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    DMLUpdateVisable
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    DMLDeleteVisable
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    DMLCommit
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>
+                    DMLRollback
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Boolean
+                </afc:attribute-class>
+                <afc:default-value>
+                    true
+                </afc:default-value>
+            </afc:attribute>
             <afc:component-extension>
                 <afc:component-tag-namespace>
                     DCTB

@@ -2,8 +2,8 @@
 <declarativeCompDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/declarativecomp">
   <declarativecomp-jsp-ui-def>/DCTB.jsf</declarativecomp-jsp-ui-def>
   <declarativecomp-taglib>
-    <taglib-name>DCTB</taglib-name>
-    <taglib-uri>/DCTB</taglib-uri>
-    <taglib-prefix>DCTB</taglib-prefix>
+    <taglib-name>DeclarativeTB</taglib-name>
+    <taglib-uri>/DeclarativeTB</taglib-uri>
+    <taglib-prefix>DeclarativeTB</taglib-prefix>
   </declarativecomp-taglib>
 </declarativeCompDefs>

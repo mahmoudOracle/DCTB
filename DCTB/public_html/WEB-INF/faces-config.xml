@@ -3,4 +3,9 @@
   <application>
     <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
   </application>
+  <managed-bean>
+    <managed-bean-name>dml</managed-bean-name>
+    <managed-bean-class>dctb.beans.Dml</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
 </faces-config>
