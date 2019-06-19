@@ -3,41 +3,41 @@
                  xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
     <af:toolbar id="dc_t1">
         <af:group id="dc_g3">
-            <af:button text="Add" id="dc_b1" icon="/images/add.png" action="#{dml.CreateInsert}">
+            <af:button text="Add" id="dc_b1" icon="/images/add.png" action="#{dml.CreateInsert}" visible="#{attrs.DMLInsertVisable}">
                 <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
                 <af:setPropertyListener from="#{attrs.InsertType}" to="#{dml.insertType}" type="action"/>
             </af:button>
-            <af:button text="Delete" id="dc_b2" icon="/images/remove.png" action="#{dml.Delete}">
+            <af:button text="Delete" id="dc_b2" icon="/images/remove.png" action="#{dml.Delete}" immediate="true" visible="#{attrs.DMLDeleteVisable}">
                 <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
         </af:group>
         <af:group id="dc_g1">
-            <af:button text="First" id="dc_b3" icon="/images/First.png" action="#{dml.First}">
-            <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="First" id="dc_b3" icon="/images/First.png" action="#{dml.First}" visible="#{attrs.NavigationVisable}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
-            <af:button text="Previous" id="dc_b4" icon="/images/back.png" action="#{dml.Previous}">
-            <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="Previous" id="dc_b4" icon="/images/back.png" action="#{dml.Previous}" visible="#{attrs.NavigationVisable}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
-            <af:button text="Next" id="dc_b5" icon="/images/next.png" action="#{dml.Next}">
-            <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="Next" id="dc_b5" icon="/images/next.png" action="#{dml.Next}" visible="#{attrs.NavigationVisable}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
-            <af:button text="Last" id="dc_b6" icon="/images/Last.png" action="#{dml.Last}">
-            <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="Last" id="dc_b6" icon="/images/Last.png" action="#{dml.Last}" visible="#{attrs.NavigationVisable}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
         </af:group>
         <af:group id="dc_g2">
-            <af:button text="Save" id="dc_b7" icon="/images/accept.png" action="#{dml.Commit}">
-             <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="Save" id="dc_b7" icon="/images/accept.png" action="#{dml.Commit}" visible="#{attrs.DMLCommit}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
-            <af:button text="Undo" id="dc_b8" icon="/images/repeat.png" action="#{dml.Rollback}">
-             <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
+            <af:button text="Undo" id="dc_b8" icon="/images/repeat.png" action="#{dml.Rollback}" immediate="true" visible="#{attrs.DMLRollback}">
+                <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
         </af:group>
