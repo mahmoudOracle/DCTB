@@ -10,7 +10,8 @@
                 <af:setPropertyListener from="#{attrs.InsertType}" to="#{dml.insertType}" type="action"/>
             </af:button>
             <af:button text="Delete" id="dc_b2" icon="/images/remove.png" immediate="true"
-                       visible="#{attrs.DMLDeleteVisable}" action="#{dml.Delete}" partialTriggers="dc_b2">
+                       visible="#{attrs.DMLDeleteVisable}" partialTriggers="dc_b2"
+                       actionListener="#{comp.handleDeleteAction}">
                 <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
@@ -26,8 +27,8 @@
                 <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
-            <af:button text="Next" id="dc_b5" icon="/images/next.png" action="#{dml.Next}"
-                       visible="#{attrs.NavigationVisable}">
+            <af:button text="Next" id="dc_b5" icon="/images/next.png"
+                       visible="#{attrs.NavigationVisable}" actionListener="#{comp.handleNext}">
                 <af:setPropertyListener from="#{attrs.IteratorName}" to="#{dml.methodNameorIteratorBinding}"
                                         type="action"/>
             </af:button>
@@ -106,7 +107,15 @@
                 <afc:component-taglib-uri>/DeclarativeTB</afc:component-taglib-uri>
                 <afc:method-attribute>
                     <afc:attribute-name>DeleteAction</afc:attribute-name>
-                    <afc:method-signature>void method()</afc:method-signature>
+                    <afc:method-signature>void method(javax.faces.event.ActionEvent)</afc:method-signature>
+                </afc:method-attribute>
+                <afc:method-attribute>
+                    <afc:attribute-name>
+                        Next
+                    </afc:attribute-name>
+                    <afc:method-signature>
+                        void method(javax.faces.event.ActionEvent)
+                    </afc:method-signature>
                 </afc:method-attribute>
             </afc:component-extension>
         </afc:component>
